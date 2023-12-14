@@ -1,0 +1,111 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Demo- Sandeep_Chowdhury</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <!-- <legend>Student Exam Performance Prediction</legend> -->
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select class="form-control" name="gender" placeholder="Enter you Gender" required>
+                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Region</label>
+            <select class="form-control" name="Region" placeholder="Enter you Region" required>
+                <option class="placeholder" selected disabled value="">region</option>
+                <option value="group A">
+                    Group A
+                </option>
+                <option value="group B">
+                    Group B
+                </option>
+                <option value="group C">
+                    Group C
+                </option>
+                <option value="group D">
+                    Group D
+                </option>
+                <option value="group E">
+                    Group E
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">education_level</label>
+            <select class="form-control" name="education_level"
+                placeholder="Enter your education_level" required>
+                <option class="placeholder" selected disabled value="">education_level</option>
+                <option value="associate's degree">
+                    associate's degree
+                </option>
+                <option value="bachelor's degree">
+                    bachelor's degree
+                </option>
+                <option value="high school">
+                    high school
+                </option>
+                <option value="master's degree">
+                    master's degree
+                </option>
+                <option value="some college">
+                    some college
+                </option>
+                <option value="some high school">
+                    some high school
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">lncome</label>
+            <select class="form-control" name="lncome" placeholder="Enter you lncome" required>
+                <option class="placeholder" selected disabled value="">lncome</option>
+                <option value="below standard">
+                    below standard
+                </option>
+                <option value="standard">
+                    standard
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">health_issue</label>
+            <select class="form-control" name="health_issue" placeholder="Enter you health_issue"
+                required>
+                <option class="placeholder" selected disabled value="">health_issue</option>
+                <option value="none">
+                    no
+                </option>
+                <option value="completed">
+                    yes
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">earlier_sales(k)</label>
+            <input class="form-control" type="number" name="earlier_sales"
+                placeholder="Enter your earlier_sales" min='0' max='100' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">quantity_sold</label>
+            <input class="form-control" type="number" name="quantity_sold"
+                placeholder="Enter your quantity_sold" min='0' max='100' />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your sales" required />
+        </div>
+    </form>
+    <h2>
+       THE  predicted sales is {{results}}
+    </h2>
+   <body>
+</html>
