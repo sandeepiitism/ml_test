@@ -5,19 +5,20 @@ This repository contains a proof-of-concept (PoC) for a machine learning (ML) ap
 ### Directory Structure
 The project is organized into the following directories:
 
-Notebook/data: Contains datasets used for training and testing the machine learning model.
+- `Notebook/data`: Contains datasets used for training and testing the machine learning model.
 
-src: Inside components folders --> Consists of modularized source code, with separate modules for data ingestion, data transformation, and model training.
+- `src:` 
+- Inside `components folders` --> Consists of modularized source code, with separate modules for data ingestion, data transformation, and model training.
 
-Inside Pipeline: Stores the predict-pipeline and train-pipeline.
+- Inside `Pipeline`: Stores the predict-pipeline and train-pipeline.
 
-Utils: Includes utility scripts for tasks such as data download, model training, and evaluation.
+- `Utils`: Includes utility scripts for tasks such as data download, model training, and evaluation.
 
-notebooks: Contains Jupyter notebooks for exploratory data analysis and model prototyping.
+- `notebooks`: Contains Jupyter notebooks for exploratory data analysis and model prototyping.
 
-deploy: Houses the necessary files for deploying the model on Azure.
+- `deploy`: Houses the necessary files for deploying the model on Azure.
 
-config: Configuration files for model parameters and Azure deployment settings.
+- `config`: Configuration files for model parameters and Azure deployment settings.
 
 Requirements
 Ensure you have the following dependencies installed:
